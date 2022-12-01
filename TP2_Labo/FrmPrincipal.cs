@@ -176,32 +176,47 @@ namespace TP2_Labo
 
         private void btnModificarUtil_Click(object sender, EventArgs e)
         {
-            int id = Convert.ToInt32(dgvUtiles.SelectedRows[0].Cells[0].Value);
-
-            if (MessageBox.Show("¿Estas seguro que quiere modificar este util?", "MODIFICAR UTIL", MessageBoxButtons.OKCancel,
-            MessageBoxIcon.Question) == DialogResult.OK)
+            try
             {
-                if (rbdVerLapices.Checked)
+                int id = Convert.ToInt32(dgvUtiles.SelectedRows[0].Cells[0].Value);
+
+                if (MessageBox.Show("Â¿Estas seguro que quiere modificar este util?", "MODIFICAR UTIL", MessageBoxButtons.OKCancel,
+                MessageBoxIcon.Question) == DialogResult.OK)
                 {
-                    FrmModificar frmModificarLapiz = new FrmModificar(lapiz1, id);
-                    this.Visible = false;
-                    frmModificarLapiz.ShowDialog();
-                    this.Visible = true;
+                    if (rbdVerLapices.Checked)
+                    {
+                        FrmModificar frmModificarLapiz = new FrmModificar(lapiz1, id);
+                        this.Visible = false;
+                        frmModificarLapiz.ShowDialog();
+                        this.Visible = true;
+                    }
+                    else if (rbdVerGomas.Checked)
+                    {
+                        FrmModificar frmModificarGoma = new FrmModificar(goma1, id);
+                        this.Visible = false;
+                        frmModificarGoma.ShowDialog();
+                        this.Visible = true;
+                    }
+                    else if (rbdVerSacapuntas.Checked)
+                    {
+                        FrmModificar frmModificarSacapunta = new FrmModificar(sacapunta1, id);
+                        this.Visible = false;
+                        frmModificarSacapunta.ShowDialog();
+                        this.Visible = true;
+                    }
                 }
-                else if (rbdVerGomas.Checked)
-                {
-                    FrmModificar frmModificarGoma = new FrmModificar(goma1, id);
-                    this.Visible = false;
-                    frmModificarGoma.ShowDialog();
-                    this.Visible = true;
-                }
-                else if (rbdVerSacapuntas.Checked)
-                {
-                    FrmModificar frmModificarSacapunta = new FrmModificar(sacapunta1, id);
-                    this.Visible = false;
-                    frmModificarSacapunta.ShowDialog();
-                    this.Visible = true;
-                }
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                MessageBox.Show("Seleccione un util para cambiar.", "NINGUN UTIL SELECCIONADO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Seleccione un lapiz, goma o sacapunta para cambiar (NO FIBRON).", "MAL SELECCIONADO EL UTIL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -210,7 +225,7 @@ namespace TP2_Labo
             try
             {
                 int id = Convert.ToInt32(dgvUtiles.SelectedRows[0].Cells[0].Value);
-                if (MessageBox.Show("¿Estas seguro que quiere eliminar este util?", "ELIMINAR UTIL", MessageBoxButtons.OKCancel,
+                if (MessageBox.Show("Â¿Estas seguro que quiere eliminar este util?", "ELIMINAR UTIL", MessageBoxButtons.OKCancel,
                 MessageBoxIcon.Question) == DialogResult.OK)
                 {
                     if (rbdVerLapices.Checked)
@@ -229,6 +244,14 @@ namespace TP2_Labo
                         dgvUtiles.DataSource = GestionDB.LeerSacapuntas();
                     }
                 }
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                MessageBox.Show("Seleccione un util para eliminar.", "NINGUN UTIL SELECCIONADO", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (FormatException)
+            {
+                MessageBox.Show("Seleccione un lapiz, goma o sacapunta para eliminar (NO FIBRON).", "MAL SELECCIONADO EL UTIL", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception ex)
             {
