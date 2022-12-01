@@ -5,7 +5,7 @@ namespace TP2_Labo
 {
     public partial class FrmPrincipal : Form
     {
-        private Cartuchera<Utiles> cartucheraNueva = new Cartuchera<Utiles>(4);
+        private Cartuchera<Utiles> cartucheraNueva = new Cartuchera<Utiles>(7);
         private Lapiz lapiz1 = new Lapiz("Faber", 250, "Verde", "Grueso");
         private Goma goma1 = new Goma("Gomita", 300, "Rojo", 2);
         private Sacapunta sacapunta1 = new Sacapunta("Sacador", 700, "Lila", "Madera");
@@ -28,6 +28,7 @@ namespace TP2_Labo
             List<Lapiz> listaLapices = GestionDB.LeerLapices();
             List<Goma> listaGomas = GestionDB.LeerGomas();
             List<Sacapunta> listaSacapuntas = GestionDB.LeerSacapuntas();
+            List<Fibron> listaFibron = GestionDB.LeerFibrones();
 
             foreach (Lapiz lapiz in listaLapices)
             {
@@ -40,6 +41,10 @@ namespace TP2_Labo
             foreach (Sacapunta sacapunta in listaSacapuntas)
             {
                 cartucheraNueva.ListaElementos.Add(sacapunta);
+            }
+            foreach (Fibron fibron in listaFibron)
+            {
+                cartucheraNueva.ListaElementos.Add(fibron);
             }
 
             cartucheraFibrones.ListaElementos.Add(fibron1);
@@ -111,7 +116,7 @@ namespace TP2_Labo
         {
             try
             {
-                lapiz1 = lapiz1.DeserializaXML();
+                lapiz1 = (Lapiz)lapiz1.DeserializaXML();
 
                 MessageBox.Show(lapiz1.ToString(), "LAPIZ DESERELIZADO DE XML", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -160,7 +165,7 @@ namespace TP2_Labo
         {
             try
             {
-                lapiz1 = lapiz1.DeserializaJson();
+                lapiz1 = (Lapiz)lapiz1.DeserializaJson();
 
                 MessageBox.Show(lapiz1.ToString(), "LAPIZ DESERELIZADO DE JSON", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -204,6 +209,13 @@ namespace TP2_Labo
                         frmModificarSacapunta.ShowDialog();
                         this.Visible = true;
                     }
+                    else if (rbdVerFibrones.Checked)
+                    {
+                        FrmModificar frmModificarFibron = new FrmModificar(fibron1, id);
+                        this.Visible = false;
+                        frmModificarFibron.ShowDialog();
+                        this.Visible = true;
+                    }
                 }
             }
             catch (ArgumentOutOfRangeException)
@@ -242,6 +254,11 @@ namespace TP2_Labo
                     {
                         GestionDB.Eliminar(sacapunta1, id);
                         dgvUtiles.DataSource = GestionDB.LeerSacapuntas();
+                    }
+                    else if (rbdVerFibrones.Checked)
+                    {
+                        GestionDB.Eliminar(fibron1, id);
+                        dgvUtiles.DataSource = GestionDB.LeerFibrones();
                     }
                 }
             }
@@ -300,8 +317,15 @@ namespace TP2_Labo
 
         private void rbdVerFibrones_CheckedChanged(object sender, EventArgs e)
         {
-            dgvUtiles.DataSource = null;
-            dgvUtiles.DataSource = cartucheraFibrones.ListaElementos;
+            try
+            {
+                dgvUtiles.DataSource = null;
+                dgvUtiles.DataSource = GestionDB.LeerFibrones();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btnResaltar_Click(object sender, EventArgs e)
@@ -345,9 +369,139 @@ namespace TP2_Labo
 
         private void tmrActualizarDGV_Tick(object sender, EventArgs e)
         {
-            dgvUtiles.Refresh();
-            dgvUtiles.Update();
+            //dgvUtiles.Refresh();
+            //dgvUtiles.Update();
+            if(rbdVerLapices.Checked)
+            {
+                dgvUtiles.DataSource = null;
+                dgvUtiles.DataSource = GestionDB.LeerLapices();
+            }
+            else if(rbdVerGomas.Checked)
+            {
+                dgvUtiles.DataSource = null;
+                dgvUtiles.DataSource = GestionDB.LeerGomas();
+            }
+            else if(rbdVerSacapuntas.Checked) 
+            {
+                dgvUtiles.DataSource = null;
+                dgvUtiles.DataSource = GestionDB.LeerSacapuntas();
+            }
+            else if(rbdVerFibrones.Checked) 
+            {
+                dgvUtiles.DataSource = null;
+                dgvUtiles.DataSource = GestionDB.LeerFibrones();
+            }
+
             tmrActualizarDGV.Start();
+        }
+
+        private void btnSerializarFibronXML_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (rbdVerFibrones.Checked)
+                {
+                    string marca = dgvUtiles.SelectedRows[0].Cells[0].Value.ToString();
+                    int precio = Convert.ToInt32(dgvUtiles.SelectedRows[0].Cells[1].Value);
+                    string color = dgvUtiles.SelectedRows[0].Cells[2].Value.ToString();
+                    int cantidadTinta = Convert.ToInt32(dgvUtiles.SelectedRows[0].Cells[3].Value);
+
+                    Fibron fibron = new Fibron(marca, precio, color, cantidadTinta);
+
+                    fibron.SerializaXML();
+                    MessageBox.Show("Se serializo correctamente el fibron a XML.", "SERIALIZACION A XML REALIZADA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Se selecciono otro tipo de util. Seleccione un fibron.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                MessageBox.Show("Se selecciono otro tipo de util. Seleccione un fibron.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnDeserializarFibronXML_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                fibron1 = (Fibron)fibron1.DeserializaXML();
+
+                MessageBox.Show(fibron1.ToString(), "FIBRON DESERELIZADO DE XML", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (FileNotFoundException)
+            {
+                MessageBox.Show("No se puede deserealizar porque todavia no se serializo ningun fibron.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnSerializarFibronJSON_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (rbdVerFibrones.Checked)
+                {
+                    string marca = dgvUtiles.SelectedRows[0].Cells[0].Value.ToString();
+                    int precio = Convert.ToInt32(dgvUtiles.SelectedRows[0].Cells[1].Value);
+                    string color = dgvUtiles.SelectedRows[0].Cells[2].Value.ToString();
+                    int cantidadTinta = Convert.ToInt32(dgvUtiles.SelectedRows[0].Cells[3].Value);
+
+                    Fibron fibron = new Fibron(marca, precio, color, cantidadTinta);
+
+
+                    fibron.SerializaJson();
+                    MessageBox.Show("Se serializo correctamente el fibron a JSON.", "SERIALIZACION A JSON REALIZADA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Se selecciono otro tipo de util. Seleccione un fibron.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (ArgumentOutOfRangeException)
+            {
+                MessageBox.Show("Se selecciono otro tipo de util. Seleccione un fibron.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnDeserializarFibronJSON_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                fibron1 = (Fibron)fibron1.DeserializaJson();
+
+                MessageBox.Show(fibron1.ToString(), "FIBRON DESERELIZADO DE JSON", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (FileNotFoundException)
+            {
+                MessageBox.Show("No se puede deserealizar porque todavia no se serializo ningun fibron.", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public void LeerNombres(Cartuchera<Utiles> cartcuhera)
+        {
+            int contadorCaracteres = 0;
+
+            foreach (Utiles util in cartcuhera.ListaElementos)
+            {
+                contadorCaracteres += util.Marca.ContarCaracteres();
+            }
         }
     }
 }

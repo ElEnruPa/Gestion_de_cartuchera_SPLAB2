@@ -62,6 +62,16 @@
             this.cbxMateriaSacapunta = new System.Windows.Forms.ComboBox();
             this.gbxGoma = new System.Windows.Forms.GroupBox();
             this.gbxSacapunta = new System.Windows.Forms.GroupBox();
+            this.gbxFibron = new System.Windows.Forms.GroupBox();
+            this.lblMarcaFibron = new System.Windows.Forms.Label();
+            this.btnAgregarFibron = new System.Windows.Forms.Button();
+            this.txtMarcaFibron = new System.Windows.Forms.TextBox();
+            this.nupdPrecioFibron = new System.Windows.Forms.NumericUpDown();
+            this.lblPrecioFibron = new System.Windows.Forms.Label();
+            this.txtColorFibron = new System.Windows.Forms.TextBox();
+            this.lblCantidadTinta = new System.Windows.Forms.Label();
+            this.lblColorFibron = new System.Windows.Forms.Label();
+            this.nupdCantidadTinta = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.nupdCapacidad)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupdPrecioLapiz)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nupdPrecioGoma)).BeginInit();
@@ -70,6 +80,9 @@
             this.gbxLapiz.SuspendLayout();
             this.gbxGoma.SuspendLayout();
             this.gbxSacapunta.SuspendLayout();
+            this.gbxFibron.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nupdPrecioFibron)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupdCantidadTinta)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAgregarLapiz
@@ -106,7 +119,7 @@
             // 
             this.lblCapacidadActual.AutoSize = true;
             this.lblCapacidadActual.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCapacidadActual.Location = new System.Drawing.Point(273, 468);
+            this.lblCapacidadActual.Location = new System.Drawing.Point(393, 470);
             this.lblCapacidadActual.Name = "lblCapacidadActual";
             this.lblCapacidadActual.Size = new System.Drawing.Size(276, 20);
             this.lblCapacidadActual.TabIndex = 3;
@@ -115,7 +128,7 @@
             // lblNuevaCapacidad
             // 
             this.lblNuevaCapacidad.AutoSize = true;
-            this.lblNuevaCapacidad.Location = new System.Drawing.Point(269, 511);
+            this.lblNuevaCapacidad.Location = new System.Drawing.Point(389, 513);
             this.lblNuevaCapacidad.Name = "lblNuevaCapacidad";
             this.lblNuevaCapacidad.Size = new System.Drawing.Size(101, 15);
             this.lblNuevaCapacidad.TabIndex = 4;
@@ -123,7 +136,7 @@
             // 
             // nupdCapacidad
             // 
-            this.nupdCapacidad.Location = new System.Drawing.Point(269, 529);
+            this.nupdCapacidad.Location = new System.Drawing.Point(389, 531);
             this.nupdCapacidad.Maximum = new decimal(new int[] {
             25,
             0,
@@ -145,7 +158,7 @@
             // 
             // btnCambiarCapacidad
             // 
-            this.btnCambiarCapacidad.Location = new System.Drawing.Point(465, 513);
+            this.btnCambiarCapacidad.Location = new System.Drawing.Point(585, 515);
             this.btnCambiarCapacidad.Name = "btnCambiarCapacidad";
             this.btnCambiarCapacidad.Size = new System.Drawing.Size(100, 50);
             this.btnCambiarCapacidad.TabIndex = 6;
@@ -436,11 +449,124 @@
             this.gbxSacapunta.TabStop = false;
             this.gbxSacapunta.Text = "Sacapunta";
             // 
+            // gbxFibron
+            // 
+            this.gbxFibron.Controls.Add(this.lblMarcaFibron);
+            this.gbxFibron.Controls.Add(this.btnAgregarFibron);
+            this.gbxFibron.Controls.Add(this.txtMarcaFibron);
+            this.gbxFibron.Controls.Add(this.nupdPrecioFibron);
+            this.gbxFibron.Controls.Add(this.lblPrecioFibron);
+            this.gbxFibron.Controls.Add(this.txtColorFibron);
+            this.gbxFibron.Controls.Add(this.lblCantidadTinta);
+            this.gbxFibron.Controls.Add(this.lblColorFibron);
+            this.gbxFibron.Controls.Add(this.nupdCantidadTinta);
+            this.gbxFibron.Location = new System.Drawing.Point(822, 36);
+            this.gbxFibron.Name = "gbxFibron";
+            this.gbxFibron.Size = new System.Drawing.Size(180, 383);
+            this.gbxFibron.TabIndex = 38;
+            this.gbxFibron.TabStop = false;
+            this.gbxFibron.Text = "Fibron";
+            // 
+            // lblMarcaFibron
+            // 
+            this.lblMarcaFibron.AutoSize = true;
+            this.lblMarcaFibron.Location = new System.Drawing.Point(6, 36);
+            this.lblMarcaFibron.Name = "lblMarcaFibron";
+            this.lblMarcaFibron.Size = new System.Drawing.Size(43, 15);
+            this.lblMarcaFibron.TabIndex = 18;
+            this.lblMarcaFibron.Text = "Marca:";
+            // 
+            // btnAgregarFibron
+            // 
+            this.btnAgregarFibron.Location = new System.Drawing.Point(6, 306);
+            this.btnAgregarFibron.Name = "btnAgregarFibron";
+            this.btnAgregarFibron.Size = new System.Drawing.Size(100, 50);
+            this.btnAgregarFibron.TabIndex = 1;
+            this.btnAgregarFibron.Text = "Agregar Fibron";
+            this.btnAgregarFibron.UseVisualStyleBackColor = true;
+            this.btnAgregarFibron.Click += new System.EventHandler(this.btnAgregarFibron_Click);
+            // 
+            // txtMarcaFibron
+            // 
+            this.txtMarcaFibron.Location = new System.Drawing.Point(6, 54);
+            this.txtMarcaFibron.Name = "txtMarcaFibron";
+            this.txtMarcaFibron.Size = new System.Drawing.Size(120, 23);
+            this.txtMarcaFibron.TabIndex = 16;
+            // 
+            // nupdPrecioFibron
+            // 
+            this.nupdPrecioFibron.Location = new System.Drawing.Point(6, 117);
+            this.nupdPrecioFibron.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.nupdPrecioFibron.Name = "nupdPrecioFibron";
+            this.nupdPrecioFibron.Size = new System.Drawing.Size(120, 23);
+            this.nupdPrecioFibron.TabIndex = 17;
+            // 
+            // lblPrecioFibron
+            // 
+            this.lblPrecioFibron.AutoSize = true;
+            this.lblPrecioFibron.Location = new System.Drawing.Point(6, 99);
+            this.lblPrecioFibron.Name = "lblPrecioFibron";
+            this.lblPrecioFibron.Size = new System.Drawing.Size(43, 15);
+            this.lblPrecioFibron.TabIndex = 19;
+            this.lblPrecioFibron.Text = "Precio:";
+            // 
+            // txtColorFibron
+            // 
+            this.txtColorFibron.Location = new System.Drawing.Point(6, 178);
+            this.txtColorFibron.Name = "txtColorFibron";
+            this.txtColorFibron.Size = new System.Drawing.Size(120, 23);
+            this.txtColorFibron.TabIndex = 24;
+            // 
+            // lblCantidadTinta
+            // 
+            this.lblCantidadTinta.AutoSize = true;
+            this.lblCantidadTinta.Location = new System.Drawing.Point(6, 223);
+            this.lblCantidadTinta.Name = "lblCantidadTinta";
+            this.lblCantidadTinta.Size = new System.Drawing.Size(87, 15);
+            this.lblCantidadTinta.TabIndex = 27;
+            this.lblCantidadTinta.Text = "Cantidad Tinta:";
+            // 
+            // lblColorFibron
+            // 
+            this.lblColorFibron.AutoSize = true;
+            this.lblColorFibron.Location = new System.Drawing.Point(6, 160);
+            this.lblColorFibron.Name = "lblColorFibron";
+            this.lblColorFibron.Size = new System.Drawing.Size(39, 15);
+            this.lblColorFibron.TabIndex = 25;
+            this.lblColorFibron.Text = "Color:";
+            // 
+            // nupdCantidadTinta
+            // 
+            this.nupdCantidadTinta.Location = new System.Drawing.Point(6, 241);
+            this.nupdCantidadTinta.Maximum = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
+            this.nupdCantidadTinta.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.nupdCantidadTinta.Name = "nupdCantidadTinta";
+            this.nupdCantidadTinta.Size = new System.Drawing.Size(120, 23);
+            this.nupdCantidadTinta.TabIndex = 26;
+            this.nupdCantidadTinta.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // FrmMenuAgregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(845, 596);
+            this.ClientSize = new System.Drawing.Size(1068, 596);
+            this.Controls.Add(this.gbxFibron);
             this.Controls.Add(this.gbxSacapunta);
             this.Controls.Add(this.gbxGoma);
             this.Controls.Add(this.gbxLapiz);
@@ -463,6 +589,10 @@
             this.gbxGoma.PerformLayout();
             this.gbxSacapunta.ResumeLayout(false);
             this.gbxSacapunta.PerformLayout();
+            this.gbxFibron.ResumeLayout(false);
+            this.gbxFibron.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nupdPrecioFibron)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nupdCantidadTinta)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -504,5 +634,15 @@
         private ComboBox cbxMateriaSacapunta;
         private GroupBox gbxGoma;
         private GroupBox gbxSacapunta;
+        private GroupBox gbxFibron;
+        private Label lblMarcaFibron;
+        private Button btnAgregarFibron;
+        private TextBox txtMarcaFibron;
+        private NumericUpDown nupdPrecioFibron;
+        private Label lblPrecioFibron;
+        private TextBox txtColorFibron;
+        private Label lblCantidadTinta;
+        private Label lblColorFibron;
+        private NumericUpDown nupdCantidadTinta;
     }
 }

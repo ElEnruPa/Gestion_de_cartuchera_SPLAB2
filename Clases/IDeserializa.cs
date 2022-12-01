@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Clases
 {
-    internal interface IDeserializa
+    internal interface IDeserializa<T> where T : Utiles
     {
-        Lapiz DeserializaXML();
-        Lapiz DeserializaJson();
+        Utiles DeserializaXML();
+        Utiles DeserializaJson();
     }
 }

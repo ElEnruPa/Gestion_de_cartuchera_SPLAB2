@@ -13,7 +13,7 @@ namespace TestProjectLapiz
             Lapiz lapizEsperado;
 
             //Act
-            lapizEsperado = lapiz.DeserializaXML();
+            lapizEsperado = (Lapiz)lapiz.DeserializaXML();
 
             //Assert
             Assert.IsNotNull(lapizEsperado);

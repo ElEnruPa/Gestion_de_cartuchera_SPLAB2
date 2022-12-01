@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 
 namespace Clases
 {
-    public class Lapiz : Utiles, ISerializa, IDeserializa
+    public class Lapiz : Utiles, ISerializa<Utiles>, IDeserializa<Utiles>
     {
         private string color;
         private string trazo;
@@ -88,7 +88,7 @@ namespace Clases
 
         }
 
-        public Lapiz DeserializaXML()
+        public Utiles DeserializaXML()
         {
             try
             {
@@ -120,7 +120,7 @@ namespace Clases
             }
         }
 
-        public Lapiz DeserializaJson()
+        public Utiles DeserializaJson()
         {
             try
             {

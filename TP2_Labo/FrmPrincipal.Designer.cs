@@ -45,6 +45,10 @@
             this.btnEliminarUtil = new System.Windows.Forms.Button();
             this.btnResaltar = new System.Windows.Forms.Button();
             this.tmrActualizarDGV = new System.Windows.Forms.Timer(this.components);
+            this.btnDeserializarFibronJSON = new System.Windows.Forms.Button();
+            this.btnSerializarFibronJSON = new System.Windows.Forms.Button();
+            this.btnDeserializarFibronXML = new System.Windows.Forms.Button();
+            this.btnSerializarFibronXML = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUtiles)).BeginInit();
             this.gbxVer.SuspendLayout();
             this.SuspendLayout();
@@ -104,7 +108,7 @@
             // 
             // btnleerTicket
             // 
-            this.btnleerTicket.Location = new System.Drawing.Point(49, 304);
+            this.btnleerTicket.Location = new System.Drawing.Point(49, 308);
             this.btnleerTicket.Name = "btnleerTicket";
             this.btnleerTicket.Size = new System.Drawing.Size(115, 50);
             this.btnleerTicket.TabIndex = 14;
@@ -218,11 +222,55 @@
             this.tmrActualizarDGV.Interval = 4000;
             this.tmrActualizarDGV.Tick += new System.EventHandler(this.tmrActualizarDGV_Tick);
             // 
+            // btnDeserializarFibronJSON
+            // 
+            this.btnDeserializarFibronJSON.Location = new System.Drawing.Point(650, 374);
+            this.btnDeserializarFibronJSON.Name = "btnDeserializarFibronJSON";
+            this.btnDeserializarFibronJSON.Size = new System.Drawing.Size(106, 46);
+            this.btnDeserializarFibronJSON.TabIndex = 32;
+            this.btnDeserializarFibronJSON.Text = "Deserializar Fibron JSON";
+            this.btnDeserializarFibronJSON.UseVisualStyleBackColor = true;
+            this.btnDeserializarFibronJSON.Click += new System.EventHandler(this.btnDeserializarFibronJSON_Click);
+            // 
+            // btnSerializarFibronJSON
+            // 
+            this.btnSerializarFibronJSON.Location = new System.Drawing.Point(538, 374);
+            this.btnSerializarFibronJSON.Name = "btnSerializarFibronJSON";
+            this.btnSerializarFibronJSON.Size = new System.Drawing.Size(106, 46);
+            this.btnSerializarFibronJSON.TabIndex = 31;
+            this.btnSerializarFibronJSON.Text = "Serializar Fibron JSON";
+            this.btnSerializarFibronJSON.UseVisualStyleBackColor = true;
+            this.btnSerializarFibronJSON.Click += new System.EventHandler(this.btnSerializarFibronJSON_Click);
+            // 
+            // btnDeserializarFibronXML
+            // 
+            this.btnDeserializarFibronXML.Location = new System.Drawing.Point(377, 374);
+            this.btnDeserializarFibronXML.Name = "btnDeserializarFibronXML";
+            this.btnDeserializarFibronXML.Size = new System.Drawing.Size(106, 46);
+            this.btnDeserializarFibronXML.TabIndex = 30;
+            this.btnDeserializarFibronXML.Text = "Deserializar Fibron XML";
+            this.btnDeserializarFibronXML.UseVisualStyleBackColor = true;
+            this.btnDeserializarFibronXML.Click += new System.EventHandler(this.btnDeserializarFibronXML_Click);
+            // 
+            // btnSerializarFibronXML
+            // 
+            this.btnSerializarFibronXML.Location = new System.Drawing.Point(265, 374);
+            this.btnSerializarFibronXML.Name = "btnSerializarFibronXML";
+            this.btnSerializarFibronXML.Size = new System.Drawing.Size(106, 46);
+            this.btnSerializarFibronXML.TabIndex = 29;
+            this.btnSerializarFibronXML.Text = "Serializar Fibron XML";
+            this.btnSerializarFibronXML.UseVisualStyleBackColor = true;
+            this.btnSerializarFibronXML.Click += new System.EventHandler(this.btnSerializarFibronXML_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(972, 393);
+            this.ClientSize = new System.Drawing.Size(972, 446);
+            this.Controls.Add(this.btnDeserializarFibronJSON);
+            this.Controls.Add(this.btnSerializarFibronJSON);
+            this.Controls.Add(this.btnDeserializarFibronXML);
+            this.Controls.Add(this.btnSerializarFibronXML);
             this.Controls.Add(this.btnResaltar);
             this.Controls.Add(this.btnEliminarUtil);
             this.Controls.Add(this.btnModificarUtil);
@@ -263,5 +311,9 @@
         private Button btnEliminarUtil;
         private Button btnResaltar;
         private System.Windows.Forms.Timer tmrActualizarDGV;
+        private Button btnDeserializarFibronJSON;
+        private Button btnSerializarFibronJSON;
+        private Button btnDeserializarFibronXML;
+        private Button btnSerializarFibronXML;
     }
 }

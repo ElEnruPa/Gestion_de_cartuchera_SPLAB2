@@ -12,5 +12,17 @@ namespace Clases
         {
             return "Se escucho el evento.";
         }
+
+        public static int ContarCaracteres(this String str)
+        {
+            int contador = 0;
+
+            foreach (char c in str)
+            {
+                contador++;
+            }
+
+            return contador;
+        }
     }
 }

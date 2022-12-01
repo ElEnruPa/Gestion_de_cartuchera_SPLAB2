@@ -30,9 +30,13 @@ namespace Clases
             {
                 query = $"DELETE FROM GOMAS WHERE id = @id;";
             }
-            else
+            else if (selected is Sacapunta)
             {
                 query = $"DELETE FROM SACAPUNTAS WHERE id = @id;";
+            }
+            else if (selected is Fibron)
+            {
+                query = $"DELETE FROM FIBRON WHERE id = @id;";
             }
 
             try
@@ -150,6 +154,37 @@ namespace Clases
             }
         }
 
+        public static List<Fibron> LeerFibrones()
+        {
+            List<Fibron> datos = new List<Fibron>();
+            try
+            {
+                using (SqlConnection conexion = new SqlConnection(GestionDB.cadenaConexion))
+                {
+                    string query = "SELECT * FROM FIBRONES";
+
+                    SqlCommand cmd = new SqlCommand(query, conexion);
+                    conexion.Open();
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        int id = reader.GetInt32(0);
+                        string marca = reader.GetString(1);
+                        int precio = reader.GetInt32(2);
+                        string color = reader.GetString(3);
+                        int cantidadTinta = reader.GetInt32(4);
+                        Fibron fibron = new Fibron(marca, precio, color, cantidadTinta, id);
+                        datos.Add(fibron);
+                    }
+                }
+                return datos;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
         #endregion
 
         #region ALTAS
@@ -213,6 +248,29 @@ namespace Clases
                     cmd.Parameters.AddWithValue("@precio", sacapunta.Precio);
                     cmd.Parameters.AddWithValue("@color", sacapunta.Color);
                     cmd.Parameters.AddWithValue("@material", sacapunta.Material);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public static void AltaFibron(Fibron fibron)
+        {
+            try
+            {
+                using (SqlConnection conexion = new SqlConnection(GestionDB.cadenaConexion))
+                {
+                    string query = "INSERT INTO FIBRONES (marca, precio, color, cantidadTinta) VALUES (@marca, @precio, @color, @cantidadTinta)";
+
+                    conexion.Open();
+                    SqlCommand cmd = new SqlCommand(query, conexion);
+                    cmd.Parameters.AddWithValue("@marca", fibron.Marca);
+                    cmd.Parameters.AddWithValue("@precio", fibron.Precio);
+                    cmd.Parameters.AddWithValue("@color", fibron.Color);
+                    cmd.Parameters.AddWithValue("@cantidadTinta", fibron.CantidadTinta);
                     cmd.ExecuteNonQuery();
                 }
             }
@@ -288,6 +346,30 @@ namespace Clases
                     cmd.Parameters.AddWithValue("@precio", sacapunta.Precio);
                     cmd.Parameters.AddWithValue("@color", sacapunta.Color);
                     cmd.Parameters.AddWithValue("@material", sacapunta.Material);
+                    conexion.Open();
+                    cmd.ExecuteNonQuery();
+                }
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
+
+        public static void ActualizarFibron(Fibron fibron, int id)
+        {
+            try
+            {
+                using (SqlConnection conexion = new SqlConnection(GestionDB.cadenaConexion))
+                {
+                    string query = "UPDATE FIBRONES SET marca=@marca, precio=@precio, color=@color, cantidadTinta=@cantidadTinta WHERE id = @id";
+
+                    SqlCommand cmd = new SqlCommand(query, conexion);
+                    cmd.Parameters.AddWithValue("@id", id);
+                    cmd.Parameters.AddWithValue("@marca", fibron.Marca);
+                    cmd.Parameters.AddWithValue("@precio", fibron.Precio);
+                    cmd.Parameters.AddWithValue("@color", fibron.Color);
+                    cmd.Parameters.AddWithValue("@cantidadTinta", fibron.CantidadTinta);
                     conexion.Open();
                     cmd.ExecuteNonQuery();
                 }

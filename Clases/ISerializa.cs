@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Clases
 {
-    internal interface ISerializa
+    internal interface ISerializa<T> where T : Utiles
     {
         void SerializaXML();
         void SerializaJson();

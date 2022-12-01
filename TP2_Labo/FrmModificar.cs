@@ -22,6 +22,7 @@ namespace Formularios
             gbxLapiz.Visible = false;
             gbxGoma.Visible = false;
             gbxSacapunta.Visible = false;
+            gbxFibron.Visible = false;
 
 
             if (util is Lapiz)
@@ -35,6 +36,10 @@ namespace Formularios
             else if(util is Sacapunta)
             {
                 gbxSacapunta.Visible = true;
+            }
+            else if (util is Fibron)
+            {
+                gbxFibron.Visible = true;
             }
         }
 
@@ -157,6 +162,45 @@ namespace Formularios
             cbxTrazoLapiz.SelectedIndex = -1;
             nupdTamanioGoma.Value = 1;
             cbxMateriaSacapunta.SelectedIndex = -1;
+            txtMarcaFibron.Clear();
+            nupdPrecioFibron.Value = 0;
+            txtColorFibron.Clear();
+            nupdCantidadTinta.Value = 1;
+        }
+
+        private void btnAgregarFibron_Click(object sender, EventArgs e)
+        {
+            string marca = txtMarcaFibron.Text;
+            int precio = (int)nupdPrecioFibron.Value;
+            string color = txtColorFibron.Text;
+            int cantidadTinta = (int)nupdCantidadTinta.Value;
+
+            try
+            {
+                if (marca is null || precio < 1 || color is null || cantidadTinta < 1)
+                {
+                    throw new DatosFaltantesException("Faltan datos para poder modificar el util.");
+                }
+                else
+                {
+                    if (MessageBox.Show("¿Estas seguro que quiere modificar este fibron?", "MODIFICAR FIBRON", MessageBoxButtons.OKCancel,
+                        MessageBoxIcon.Question) == DialogResult.OK)
+                    {
+                        Fibron fibron = new Fibron(marca, precio, color, cantidadTinta);
+                        GestionDB.ActualizarFibron(fibron, idForm);
+                        limpiarHerramientas();
+                        MessageBox.Show("Se modifico el fibron correctamente.", "MODIFICACION HECHA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (DatosFaltantesException ex)
+            {
+                MessageBox.Show(ex.Message, "DATOS FALTANTES", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
