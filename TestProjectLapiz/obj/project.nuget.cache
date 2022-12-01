@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bXst3iR68TJEjZ9+wxXuyajOl7PKjyTuwS2LTMGyHiVMmVy54Wdy+4u5qjGi5syU4dit9IWttOBLu0MQ1LrUQw==",
+  "dgSpecHash": "aaddJ9NB4FN3ElM3mvFjliGFbUwIb8k5ixLGJEjG7k/dVUIyLuez+F/18CvH8YZ3R3QYhW8FWegZT2MhbJzJxg==",
   "success": true,
-  "projectFilePath": "E:\\Users\\Enru\\TP2_Labo\\TestProjectLapiz\\TestProjectLapiz.csproj",
+  "projectFilePath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\TestProjectLapiz\\TestProjectLapiz.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Enru\\.nuget\\packages\\coverlet.collector\\3.1.2\\coverlet.collector.3.1.2.nupkg.sha512",
     "C:\\Users\\Enru\\.nuget\\packages\\microsoft.codecoverage\\17.3.2\\microsoft.codecoverage.17.3.2.nupkg.sha512",

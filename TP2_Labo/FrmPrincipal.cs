@@ -47,7 +47,7 @@ namespace TP2_Labo
             cartucheraFibrones.ListaElementos.Add(fibron3);
             SinTintaEvento += sinTintaError;
 
-            tmrActualizarDGV.Start();
+            tmrActualizarDGV.Start(); //Refresh DGV
         }
 
         private void btnAgregarUtil_Click(object sender, EventArgs e)

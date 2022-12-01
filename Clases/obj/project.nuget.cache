@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QmzW5xQcjUOvPbf0bbhCUPcd48W38rARHDwgLDsiWgQlo+3BOhi31Z8WiJTyus2K/T33EWBnROHwbBu/g6ieIw==",
+  "dgSpecHash": "UQATwhmnYWWALZtT5aq1PCB3k+2HZPhani3PM3z5r3MwA1r6LklM8SYhXHmvXvZmEUvIiRfIhoCbf/dbofFXdA==",
   "success": true,
-  "projectFilePath": "E:\\Users\\Enru\\TP2_Labo\\Clases\\Clases.csproj",
+  "projectFilePath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Enru\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Enru\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

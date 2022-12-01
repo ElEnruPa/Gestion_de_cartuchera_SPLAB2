@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Users\\Enru\\TP2_Labo\\TP2_Labo\\Formularios.csproj": {}
+    "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\TP2_Labo\\Formularios.csproj": {}
   },
   "projects": {
-    "E:\\Users\\Enru\\TP2_Labo\\Clases\\Clases.csproj": {
+    "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Users\\Enru\\TP2_Labo\\Clases\\Clases.csproj",
+        "projectUniqueName": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj",
         "projectName": "Clases",
-        "projectPath": "E:\\Users\\Enru\\TP2_Labo\\Clases\\Clases.csproj",
+        "projectPath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj",
         "packagesPath": "C:\\Users\\Enru\\.nuget\\packages\\",
-        "outputPath": "E:\\Users\\Enru\\TP2_Labo\\Clases\\obj\\",
+        "outputPath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\Clases\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Enru\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "E:\\Users\\Enru\\TP2_Labo\\TP2_Labo\\Formularios.csproj": {
+    "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\TP2_Labo\\Formularios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Users\\Enru\\TP2_Labo\\TP2_Labo\\Formularios.csproj",
+        "projectUniqueName": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\TP2_Labo\\Formularios.csproj",
         "projectName": "Formularios",
-        "projectPath": "E:\\Users\\Enru\\TP2_Labo\\TP2_Labo\\Formularios.csproj",
+        "projectPath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\TP2_Labo\\Formularios.csproj",
         "packagesPath": "C:\\Users\\Enru\\.nuget\\packages\\",
-        "outputPath": "E:\\Users\\Enru\\TP2_Labo\\TP2_Labo\\obj\\",
+        "outputPath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\TP2_Labo\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Enru\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,8 +89,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "E:\\Users\\Enru\\TP2_Labo\\Clases\\Clases.csproj": {
-                "projectPath": "E:\\Users\\Enru\\TP2_Labo\\Clases\\Clases.csproj"
+              "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj": {
+                "projectPath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj"
               }
             }
           }

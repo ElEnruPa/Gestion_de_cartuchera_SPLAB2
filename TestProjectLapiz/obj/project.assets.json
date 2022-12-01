@@ -7230,11 +7230,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Users\\Enru\\TP2_Labo\\TestProjectLapiz\\TestProjectLapiz.csproj",
+      "projectUniqueName": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\TestProjectLapiz\\TestProjectLapiz.csproj",
       "projectName": "TestProjectLapiz",
-      "projectPath": "E:\\Users\\Enru\\TP2_Labo\\TestProjectLapiz\\TestProjectLapiz.csproj",
+      "projectPath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\TestProjectLapiz\\TestProjectLapiz.csproj",
       "packagesPath": "C:\\Users\\Enru\\.nuget\\packages\\",
-      "outputPath": "E:\\Users\\Enru\\TP2_Labo\\TestProjectLapiz\\obj\\",
+      "outputPath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\TestProjectLapiz\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Enru\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7251,8 +7251,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\Users\\Enru\\TP2_Labo\\Clases\\Clases.csproj": {
-              "projectPath": "E:\\Users\\Enru\\TP2_Labo\\Clases\\Clases.csproj"
+            "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj": {
+              "projectPath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj"
             }
           }
         }
