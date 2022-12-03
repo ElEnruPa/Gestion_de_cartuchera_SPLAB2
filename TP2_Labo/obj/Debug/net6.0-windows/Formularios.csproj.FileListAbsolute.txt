@@ -54,3 +54,31 @@ E:\Users\Enru\Downloads\OneDrive\Escritorio\clona3\Montes.Enrico.SPLabII\TP2_Lab
 E:\Users\Enru\Downloads\OneDrive\Escritorio\clona3\Montes.Enrico.SPLabII\TP2_Labo\obj\Debug\net6.0-windows\Formularios.pdb
 E:\Users\Enru\Downloads\OneDrive\Escritorio\clona3\Montes.Enrico.SPLabII\TP2_Labo\obj\Debug\net6.0-windows\Formularios.genruntimeconfig.cache
 E:\Users\Enru\Downloads\OneDrive\Escritorio\clona3\Montes.Enrico.SPLabII\TP2_Labo\obj\Debug\net6.0-windows\ref\Formularios.dll
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\bin\Debug\net6.0-windows\Formularios.exe
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\bin\Debug\net6.0-windows\Formularios.deps.json
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\bin\Debug\net6.0-windows\Formularios.runtimeconfig.json
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\bin\Debug\net6.0-windows\Formularios.dll
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\bin\Debug\net6.0-windows\Formularios.pdb
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\bin\Debug\net6.0-windows\Clases.dll
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\bin\Debug\net6.0-windows\Clases.pdb
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\obj\Debug\net6.0-windows\Formularios.csproj.AssemblyReference.cache
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\obj\Debug\net6.0-windows\Formularios.FrmMenuAgregar.resources
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\obj\Debug\net6.0-windows\Formularios.FrmModificar.resources
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\obj\Debug\net6.0-windows\TP2_Labo.FrmPrincipal.resources
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\obj\Debug\net6.0-windows\Formularios.csproj.GenerateResource.cache
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\obj\Debug\net6.0-windows\Formularios.GeneratedMSBuildEditorConfig.editorconfig
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\obj\Debug\net6.0-windows\Formularios.AssemblyInfoInputs.cache
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\obj\Debug\net6.0-windows\Formularios.AssemblyInfo.cs
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\obj\Debug\net6.0-windows\Formularios.csproj.CoreCompileInputs.cache
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\obj\Debug\net6.0-windows\Formularios.csproj.CopyComplete
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\obj\Debug\net6.0-windows\Formularios.dll
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\obj\Debug\net6.0-windows\refint\Formularios.dll
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\obj\Debug\net6.0-windows\Formularios.pdb
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\obj\Debug\net6.0-windows\Formularios.genruntimeconfig.cache
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\TP2_Labo\obj\Debug\net6.0-windows\ref\Formularios.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj": {}
+    "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\SP-TP2 Labo ll\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj": {}
   },
   "projects": {
-    "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj": {
+    "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\SP-TP2 Labo ll\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj",
+        "projectUniqueName": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\SP-TP2 Labo ll\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj",
         "projectName": "Clases",
-        "projectPath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj",
+        "projectPath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\SP-TP2 Labo ll\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj",
         "packagesPath": "C:\\Users\\Enru\\.nuget\\packages\\",
-        "outputPath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\Clases\\obj\\",
+        "outputPath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\SP-TP2 Labo ll\\Montes.Enrico.SPLabII\\Clases\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Enru\\AppData\\Roaming\\NuGet\\NuGet.Config",

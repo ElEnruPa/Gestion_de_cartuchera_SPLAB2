@@ -22,3 +22,15 @@ E:\Users\Enru\Downloads\OneDrive\Escritorio\clona3\Montes.Enrico.SPLabII\Clases\
 E:\Users\Enru\Downloads\OneDrive\Escritorio\clona3\Montes.Enrico.SPLabII\Clases\obj\Debug\net6.0\refint\Clases.dll
 E:\Users\Enru\Downloads\OneDrive\Escritorio\clona3\Montes.Enrico.SPLabII\Clases\obj\Debug\net6.0\Clases.pdb
 E:\Users\Enru\Downloads\OneDrive\Escritorio\clona3\Montes.Enrico.SPLabII\Clases\obj\Debug\net6.0\ref\Clases.dll
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\Clases\bin\Debug\net6.0\Clases.deps.json
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\Clases\bin\Debug\net6.0\Clases.dll
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\Clases\bin\Debug\net6.0\Clases.pdb
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\Clases\obj\Debug\net6.0\Clases.csproj.AssemblyReference.cache
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\Clases\obj\Debug\net6.0\Clases.GeneratedMSBuildEditorConfig.editorconfig
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\Clases\obj\Debug\net6.0\Clases.AssemblyInfoInputs.cache
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\Clases\obj\Debug\net6.0\Clases.AssemblyInfo.cs
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\Clases\obj\Debug\net6.0\Clases.csproj.CoreCompileInputs.cache
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\Clases\obj\Debug\net6.0\Clases.dll
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\Clases\obj\Debug\net6.0\refint\Clases.dll
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\Clases\obj\Debug\net6.0\Clases.pdb
+E:\Users\Enru\Downloads\OneDrive\Escritorio\SP-TP2 Labo ll\Montes.Enrico.SPLabII\Clases\obj\Debug\net6.0\ref\Clases.dll

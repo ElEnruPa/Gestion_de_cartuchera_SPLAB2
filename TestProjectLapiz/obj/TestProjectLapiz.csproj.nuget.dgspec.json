@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\TestProjectLapiz\\TestProjectLapiz.csproj": {}
+    "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\SP-TP2 Labo ll\\Montes.Enrico.SPLabII\\TestProjectLapiz\\TestProjectLapiz.csproj": {}
   },
   "projects": {
-    "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj": {
+    "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\SP-TP2 Labo ll\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj",
+        "projectUniqueName": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\SP-TP2 Labo ll\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj",
         "projectName": "Clases",
-        "projectPath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj",
+        "projectPath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\SP-TP2 Labo ll\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj",
         "packagesPath": "C:\\Users\\Enru\\.nuget\\packages\\",
-        "outputPath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\Clases\\obj\\",
+        "outputPath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\SP-TP2 Labo ll\\Montes.Enrico.SPLabII\\Clases\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Enru\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\TestProjectLapiz\\TestProjectLapiz.csproj": {
+    "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\SP-TP2 Labo ll\\Montes.Enrico.SPLabII\\TestProjectLapiz\\TestProjectLapiz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\TestProjectLapiz\\TestProjectLapiz.csproj",
+        "projectUniqueName": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\SP-TP2 Labo ll\\Montes.Enrico.SPLabII\\TestProjectLapiz\\TestProjectLapiz.csproj",
         "projectName": "TestProjectLapiz",
-        "projectPath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\TestProjectLapiz\\TestProjectLapiz.csproj",
+        "projectPath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\SP-TP2 Labo ll\\Montes.Enrico.SPLabII\\TestProjectLapiz\\TestProjectLapiz.csproj",
         "packagesPath": "C:\\Users\\Enru\\.nuget\\packages\\",
-        "outputPath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\TestProjectLapiz\\obj\\",
+        "outputPath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\SP-TP2 Labo ll\\Montes.Enrico.SPLabII\\TestProjectLapiz\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Enru\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,8 +89,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj": {
-                "projectPath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\clona3\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj"
+              "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\SP-TP2 Labo ll\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj": {
+                "projectPath": "E:\\Users\\Enru\\Downloads\\OneDrive\\Escritorio\\SP-TP2 Labo ll\\Montes.Enrico.SPLabII\\Clases\\Clases.csproj"
               }
             }
           }

@@ -9,7 +9,7 @@ using System.Xml.Serialization;
 
 namespace Clases
 {
-    public class Lapiz : Utiles, ISerializa<Utiles>, IDeserializa<Utiles>
+    public class Lapiz : Utiles, ISerializa<Lapiz>, IDeserializa<Lapiz>
     {
         private string color;
         private string trazo;

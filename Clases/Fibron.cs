@@ -71,7 +71,7 @@ namespace Clases
             return sb.ToString();
         }
 
-        public void Resaltar(int cantidad)
+        public void Resaltar(Fibron fibron, int cantidad)
         {
             if(cantidad > this.cantidadTinta)
             {
@@ -79,7 +79,9 @@ namespace Clases
             }
             else
             {
-                this.cantidadTinta -= cantidad;
+                //this.cantidadTinta -= cantidad;
+                fibron.CantidadTinta -= cantidad;
+                GestionDB.ActualizarFibron(fibron, fibron.id);
             }
         }
 

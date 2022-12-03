@@ -129,7 +129,7 @@
             // rbdVerLapices
             // 
             this.rbdVerLapices.AutoSize = true;
-            this.rbdVerLapices.Location = new System.Drawing.Point(27, 35);
+            this.rbdVerLapices.Location = new System.Drawing.Point(29, 37);
             this.rbdVerLapices.Name = "rbdVerLapices";
             this.rbdVerLapices.Size = new System.Drawing.Size(83, 19);
             this.rbdVerLapices.TabIndex = 21;
@@ -141,7 +141,7 @@
             // rbdVerGomas
             // 
             this.rbdVerGomas.AutoSize = true;
-            this.rbdVerGomas.Location = new System.Drawing.Point(27, 60);
+            this.rbdVerGomas.Location = new System.Drawing.Point(29, 62);
             this.rbdVerGomas.Name = "rbdVerGomas";
             this.rbdVerGomas.Size = new System.Drawing.Size(81, 19);
             this.rbdVerGomas.TabIndex = 22;
@@ -153,7 +153,7 @@
             // rbdVerSacapuntas
             // 
             this.rbdVerSacapuntas.AutoSize = true;
-            this.rbdVerSacapuntas.Location = new System.Drawing.Point(27, 85);
+            this.rbdVerSacapuntas.Location = new System.Drawing.Point(29, 87);
             this.rbdVerSacapuntas.Name = "rbdVerSacapuntas";
             this.rbdVerSacapuntas.Size = new System.Drawing.Size(104, 19);
             this.rbdVerSacapuntas.TabIndex = 24;
@@ -165,7 +165,7 @@
             // rbdVerFibrones
             // 
             this.rbdVerFibrones.AutoSize = true;
-            this.rbdVerFibrones.Location = new System.Drawing.Point(27, 110);
+            this.rbdVerFibrones.Location = new System.Drawing.Point(29, 112);
             this.rbdVerFibrones.Name = "rbdVerFibrones";
             this.rbdVerFibrones.Size = new System.Drawing.Size(89, 19);
             this.rbdVerFibrones.TabIndex = 23;
@@ -219,7 +219,7 @@
             // tmrActualizarDGV
             // 
             this.tmrActualizarDGV.Enabled = true;
-            this.tmrActualizarDGV.Interval = 4000;
+            this.tmrActualizarDGV.Interval = 7000;
             this.tmrActualizarDGV.Tick += new System.EventHandler(this.tmrActualizarDGV_Tick);
             // 
             // btnDeserializarFibronJSON

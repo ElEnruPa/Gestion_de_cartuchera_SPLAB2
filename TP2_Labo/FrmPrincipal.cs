@@ -17,6 +17,7 @@ namespace TP2_Labo
 
         public delegate void DelegadoTinta(Fibron fibron, int tinta);
         public event DelegadoTinta SinTintaEvento;
+        
 
         public FrmPrincipal()
         {
@@ -331,17 +332,25 @@ namespace TP2_Labo
         private void btnResaltar_Click(object sender, EventArgs e)
         {
             Random random = new Random();
-            int elegido = random.Next(0, cartucheraFibrones.ListaElementos.Count);
-            Fibron fibron = cartucheraFibrones.ListaElementos[elegido];
+            List<Fibron> fibrones = GestionDB.LeerFibrones();
+            int elegido = random.Next(0, fibrones.Count);
+            Fibron fibron = fibrones[elegido];
             int tintaResaltar = random.Next(1, 11);
-
+            
             try
-            {
-                int cantidadTintaAux = fibron.CantidadTinta;
-                fibron.Resaltar(tintaResaltar);
-                MessageBox.Show($"La tinta del fibron alcanzo para resaltar.\n" +
-                    $"Tinta del fibron: {cantidadTintaAux}\n" +
-                    $"Tinta a resaltar: {tintaResaltar}", "RESALTADO CON EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            {                    
+                if (rbdVerFibrones.Checked)
+                {
+                    int cantidadTintaAux = fibron.CantidadTinta;
+                    fibron.Resaltar(fibron, tintaResaltar);
+                    MessageBox.Show($"La tinta del fibron alcanzo para resaltar.\n" +
+                        $"Tinta del fibron: {cantidadTintaAux}\n" +
+                        $"Tinta a resaltar: {tintaResaltar}", "RESALTADO CON EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Se selecciono tabla de util. Seleccione la tabla de fibrones.", "TABLA ERRONEA", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             catch (SinTintaException)
             {
@@ -349,6 +358,10 @@ namespace TP2_Labo
                 MessageBox.Show($"La tinta del fibron NO alcanzo para resaltar.\n" +
                     $"Tinta del fibron: {fibron.CantidadTinta}\n" +
                     $"Tinta a resaltar: {tintaResaltar}", "RESALTADO FALLIDO", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -401,10 +414,10 @@ namespace TP2_Labo
             {
                 if (rbdVerFibrones.Checked)
                 {
-                    string marca = dgvUtiles.SelectedRows[0].Cells[0].Value.ToString();
-                    int precio = Convert.ToInt32(dgvUtiles.SelectedRows[0].Cells[1].Value);
-                    string color = dgvUtiles.SelectedRows[0].Cells[2].Value.ToString();
-                    int cantidadTinta = Convert.ToInt32(dgvUtiles.SelectedRows[0].Cells[3].Value);
+                    string marca = dgvUtiles.SelectedRows[0].Cells[1].Value.ToString();
+                    int precio = Convert.ToInt32(dgvUtiles.SelectedRows[0].Cells[2].Value);
+                    string color = dgvUtiles.SelectedRows[0].Cells[3].Value.ToString();
+                    int cantidadTinta = Convert.ToInt32(dgvUtiles.SelectedRows[0].Cells[4].Value);
 
                     Fibron fibron = new Fibron(marca, precio, color, cantidadTinta);
 
@@ -450,10 +463,10 @@ namespace TP2_Labo
             {
                 if (rbdVerFibrones.Checked)
                 {
-                    string marca = dgvUtiles.SelectedRows[0].Cells[0].Value.ToString();
-                    int precio = Convert.ToInt32(dgvUtiles.SelectedRows[0].Cells[1].Value);
-                    string color = dgvUtiles.SelectedRows[0].Cells[2].Value.ToString();
-                    int cantidadTinta = Convert.ToInt32(dgvUtiles.SelectedRows[0].Cells[3].Value);
+                    string marca = dgvUtiles.SelectedRows[0].Cells[1].Value.ToString();
+                    int precio = Convert.ToInt32(dgvUtiles.SelectedRows[0].Cells[2].Value);
+                    string color = dgvUtiles.SelectedRows[0].Cells[3].Value.ToString();
+                    int cantidadTinta = Convert.ToInt32(dgvUtiles.SelectedRows[0].Cells[4].Value);
 
                     Fibron fibron = new Fibron(marca, precio, color, cantidadTinta);
 
